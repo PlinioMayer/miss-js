@@ -30,7 +30,6 @@
   "homepage": "https://github.com/PlinioMayer/futils#readme",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
-    "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^22.14.0",
     "eslint": "^9.24.0",
@@ -39,6 +38,7 @@
     "globals": "^16.0.0",
     "jiti": "^2.4.2",
     "rollup": "^4.39.0",
+    "tsc-alias": "^1.8.15",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1"
   },

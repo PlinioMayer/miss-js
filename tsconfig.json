@@ -5,12 +5,13 @@
     "module": "NodeNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true, 
+    "strict": true,
+    "outDir": "packages/boolean/dist",
     "paths": {
       "@": ["./src"],
       "@/*": ["./src/*"],
-      "@date": ["./packages/futils-date/src"],
-      "@date/*": ["./packages/futils-date/src/*"]
+      "@boolean": ["./packages/boolean/src"],
+      "@boolean/*": ["./packages/boolean/src/*"]
     }
   }
 }

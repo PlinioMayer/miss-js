@@ -1,12 +1,15 @@
 import typescript from "@rollup/plugin-typescript";
 import { readFileSync } from "node:fs";
-import { nodeResolve } from "@rollup/plugin-node-resolve";
+import { RollupOptions } from "rollup";
+import { replaceTscAliasPaths } from "tsc-alias";
 
 const rootPkgJson = JSON.parse(readFileSync("./package.json", "utf-8"));
 
-const buildConfig = (pkg?: string) => {
+const buildConfig = (pkg?: string): RollupOptions[] => {
   const prefix = pkg ? `./${pkg}` : ".";
   const pkgJson = JSON.parse(readFileSync(`${prefix}/package.json`, "utf-8"));
+  const outDir = `${prefix}/dist`;
+
   return [
     {
       input: `${prefix}/src/index.ts`,
@@ -21,15 +24,20 @@ const buildConfig = (pkg?: string) => {
         },
       ],
       plugins: [
-        nodeResolve(),
         typescript({
           include: [`${prefix}/src/**/*`],
           compilerOptions: {
             declaration: true,
-            outDir: `${prefix}/dist`,
             module: "ESNext",
+            outDir,
           },
         }),
+        {
+          name: "tsc-alias",
+          writeBundle: () => {
+            replaceTscAliasPaths({ outDir });
+          },
+        },
       ],
     },
   ];
