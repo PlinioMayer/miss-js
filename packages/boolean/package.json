@@ -1,0 +1,31 @@
+{
+  "name": "@miss-js/boolean",
+  "version": "1.0.0",
+  "description": "Boolean utilities for miss-js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.ejs",
+  "types": "dist/index.d.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlinioMayer/miss-js.git"
+  },
+  "keywords": [
+    "utilities",
+    "utils",
+    "commons",
+    "common",
+    "miss-js",
+    "boolean",
+    "pliniao"
+  ],
+  "author": "PlinioMayer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PlinioMayer/miss-js/issues"
+  },
+  "homepage": "https://github.com/PlinioMayer/miss-js#readme"
+}
