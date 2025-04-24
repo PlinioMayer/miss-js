@@ -1,5 +1,12 @@
 {
-  "include": ["src/**/*", "packages/**/src/**/*", "eslint.config.ts", "rollup.config.ts"],
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "packages/**/src/**/*",
+    "packages/**/test/**/*",
+    "eslint.config.ts",
+    "rollup.config.ts"
+  ],
   "compilerOptions": {
     "target": "ES5",
     "module": "NodeNext",
@@ -8,10 +15,18 @@
     "strict": true,
     "outDir": "packages/boolean/dist",
     "paths": {
-      "@": ["./src"],
-      "@/*": ["./src/*"],
-      "@boolean": ["./packages/boolean/src"],
-      "@boolean/*": ["./packages/boolean/src/*"]
+      "@": [
+        "./src"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@boolean": [
+        "./packages/boolean/src"
+      ],
+      "@boolean/*": [
+        "./packages/boolean/src/*"
+      ]
     }
   }
 }
