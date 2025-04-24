@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*", "packages/**/src/**/*", "eslint.config.ts", "rollup.config.ts"],
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, 
+    "paths": {
+      "@": ["./src"],
+      "@/*": ["./src/*"],
+      "@date": ["./packages/futils-date/src"],
+      "@date/*": ["./packages/futils-date/src/*"]
+    }
+  }
+}

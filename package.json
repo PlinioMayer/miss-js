@@ -1,0 +1,46 @@
+{
+  "name": "miss-js",
+  "version": "1.0.0",
+  "description": "Common utilities shared amongst many projects of mine",
+  "main": "dist/index.cjs",
+  "module": "dist/index.ejs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup --bundleConfigAsCjs --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlinioMayer/futils.git"
+  },
+  "keywords": [
+    "utilities",
+    "utils",
+    "common",
+    "commons",
+    "miss-js",
+    "pliniao"
+  ],
+  "author": "PlinioMayer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PlinioMayer/futils/issues"
+  },
+  "homepage": "https://github.com/PlinioMayer/futils#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "jiti": "^2.4.2",
+    "rollup": "^4.39.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  },
+  "workspaces": []
+}
