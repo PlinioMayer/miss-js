@@ -1,5 +1,5 @@
 import { defineConfig } from "eslint/config";
-import { ConfigWithExtendsArray } from "@eslint/config-helpers";
+import { ConfigWithExtendsArray, globalIgnores } from "@eslint/config-helpers";
 import js from "@eslint/js";
 import globals from "globals";
 import { configs } from "typescript-eslint";
@@ -22,4 +22,5 @@ export default defineConfig([
       "@typescript-eslint/no-require-imports": "off",
     },
   },
+  globalIgnores(["/node_modules", "**/dist"]),
 ]);
