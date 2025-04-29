@@ -2,6 +2,8 @@ import typescript from "@rollup/plugin-typescript";
 import { readFileSync } from "node:fs";
 import { RollupOptions } from "rollup";
 import { replaceTscAliasPaths } from "tsc-alias";
+// import alias from "@rollup/plugin-alias";
+// import { resolve } from "node:path";
 
 const rootPkgJson = JSON.parse(readFileSync("./package.json", "utf-8"));
 

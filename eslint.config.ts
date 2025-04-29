@@ -17,4 +17,9 @@ export default defineConfig([
   },
   configs.recommended as ConfigWithExtendsArray,
   prettierConfig,
+  {
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
 ]);
