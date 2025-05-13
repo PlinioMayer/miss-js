@@ -28,6 +28,9 @@
     "url": "https://github.com/PlinioMayer/futils/issues"
   },
   "homepage": "https://github.com/PlinioMayer/futils#readme",
+  "dependencies": {
+    "@miss-js/types": "^1.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
@@ -50,6 +53,8 @@
   },
   "workspaces": [
     "packages/boolean",
-    "packages/object"
+    "packages/object",
+    "packages/date",
+    "packages/types"
   ]
 }

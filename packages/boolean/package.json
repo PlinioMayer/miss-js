@@ -6,7 +6,11 @@
   "module": "dist/index.ejs",
   "types": "dist/index.d.ts",
   "peerDependencies": {
+    "miss-js": "^1.0.0",
     "@miss-js/object": "^1.0.0"
+  },
+  "devDependencies": {
+    "miss-js": "../.."
   },
   "repository": {
     "type": "git",

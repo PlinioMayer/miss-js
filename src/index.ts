@@ -6,3 +6,4 @@ const missJS: MissJS = {
 };
 
 export { missJS, is };
+export * from "./types";

@@ -1,8 +1,9 @@
 import { safeRequire } from "@/utils";
 import { BooleanIs } from "@miss-js/boolean";
 import { ObjectIs } from "@miss-js/object";
+import { Is } from "@miss-js/types";
 
-export const is = (value: unknown): BooleanIs & ObjectIs => ({
+export const is: Is<BooleanIs & ObjectIs> = (value: unknown) => ({
   ...((
     safeRequire("@miss-js/object") as {
       is: (value: unknown) => ObjectIs;

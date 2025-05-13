@@ -1,15 +1,13 @@
 {
-  "name": "@miss-js/object",
+  "name": "@miss-js/types",
   "version": "1.0.0",
-  "description": "Object utilities for miss-js",
+  "description": "Types for miss-js",
   "main": "dist/index.cjs",
   "module": "dist/index.ejs",
   "types": "dist/index.d.ts",
-  "peerDependencies": {
-    "miss-js": "^1.0.0"
-  },
-  "devDependencies": {
-    "miss-js": "../.."
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +19,7 @@
     "commons",
     "common",
     "miss-js",
-    "object",
+    "types",
     "pliniao"
   ],
   "author": "PlinioMayer",

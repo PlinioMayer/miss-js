@@ -1,3 +1,4 @@
+import { Is } from "@miss-js/types";
 import { is as objectIs } from "@miss-js/object";
 
 export type BooleanIs = {
@@ -5,7 +6,7 @@ export type BooleanIs = {
   false: () => boolean;
 };
 
-export const is = (value: unknown): BooleanIs => ({
+export const is: Is<BooleanIs> = (value: unknown): BooleanIs => ({
   true: () => objectIs(value).equal(true),
   false: () => objectIs(value).equal(false),
 });
