@@ -49,6 +49,7 @@
     "typescript-eslint": "^8.29.1"
   },
   "workspaces": [
-    "packages/boolean"
+    "packages/boolean",
+    "packages/object"
   ]
 }

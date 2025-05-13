@@ -1,13 +1,11 @@
-export type IsBoolean = {
+import { is as objectIs } from "@miss-js/object";
+
+export type BooleanIs = {
   true: () => boolean;
   false: () => boolean;
-  truthy: () => boolean;
-  falsy: () => boolean;
 };
 
-export const is = (value: unknown): IsBoolean => ({
-  true: () => value === true,
-  false: () => value === false,
-  truthy: () => !!value,
-  falsy: () => !value,
+export const is = (value: unknown): BooleanIs => ({
+  true: () => objectIs(value).equal(true),
+  false: () => objectIs(value).equal(false),
 });

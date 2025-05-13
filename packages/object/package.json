@@ -1,13 +1,10 @@
 {
-  "name": "@miss-js/boolean",
+  "name": "@miss-js/object",
   "version": "1.0.0",
-  "description": "Boolean utilities for miss-js",
+  "description": "Object utilities for miss-js",
   "main": "dist/index.cjs",
   "module": "dist/index.ejs",
   "types": "dist/index.d.ts",
-  "peerDependencies": {
-    "@miss-js/object": "^1.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PlinioMayer/miss-js.git"
@@ -18,7 +15,7 @@
     "commons",
     "common",
     "miss-js",
-    "boolean",
+    "object",
     "pliniao"
   ],
   "author": "PlinioMayer",

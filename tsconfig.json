@@ -26,6 +26,12 @@
       ],
       "@boolean/*": [
         "./packages/boolean/src/*"
+      ],
+      "@object": [
+        "./packages/object/src"
+      ],
+      "@object/*": [
+        "./packages/object/src/*"
       ]
     }
   }
