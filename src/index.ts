@@ -1,9 +1,10 @@
-import { is } from "./is";
-import { MissJS } from "./types/miss-js";
+import { format, is } from "@/methods";
+import { MissJS } from "@/types";
 
 const missJS: MissJS = {
+  format,
   is,
 };
 
-export { missJS, is };
-export * from "./types";
+export { missJS, format, is };
+export * from "@/types";

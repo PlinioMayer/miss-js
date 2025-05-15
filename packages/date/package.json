@@ -5,7 +5,9 @@
   "main": "dist/index.cjs",
   "module": "dist/index.ejs",
   "types": "dist/index.d.ts",
-  "devDependencies": {},
+  "peerDependencies": {
+    "@miss-js/object": "^1.0.0"
+  },
   "scripts": {
     "test": "jest"
   },

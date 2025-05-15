@@ -55,6 +55,7 @@
     "packages/boolean",
     "packages/object",
     "packages/date",
-    "packages/types"
+    "packages/types",
+    "packages/string"
   ]
 }

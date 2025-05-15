@@ -1,12 +1,12 @@
 {
-  "name": "@miss-js/boolean",
+  "name": "@miss-js/string",
   "version": "1.0.0",
-  "description": "Boolean utilities for miss-js",
+  "description": "String utilities for miss-js",
   "main": "dist/index.cjs",
   "module": "dist/index.ejs",
   "types": "dist/index.d.ts",
-  "peerDependencies": {
-    "@miss-js/object": "^1.0.0"
+  "scripts": {
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "commons",
     "common",
     "miss-js",
-    "boolean",
+    "string",
     "pliniao"
   ],
   "author": "PlinioMayer",

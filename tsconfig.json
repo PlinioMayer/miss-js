@@ -32,6 +32,12 @@
       ],
       "@object/*": [
         "./packages/object/src/*"
+      ],
+      "@date": [
+        "./packages/date/src"
+      ],
+      "@date/*": [
+        "./packages/date/src/*"
       ]
     }
   }
